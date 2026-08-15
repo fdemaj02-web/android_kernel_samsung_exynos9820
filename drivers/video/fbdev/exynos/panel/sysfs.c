@@ -3913,10 +3913,10 @@ struct device_attribute panel_attrs[] = {
 #endif
 	__PANEL_ATTR_RW(irc_mode, 0664),
 	__PANEL_ATTR_RW(dia, 0664),
-	__PANEL_ATTR_RO(color_coordinate, 0444),
+	__PANEL_ATTR_RW(color_coordinate, 0666),
 	__PANEL_ATTR_RO(manufacture_date, 0444),
 	__PANEL_ATTR_RO(brightness_table, 0444),
-	__PANEL_ATTR_RW(adaptive_control, 0664),
+	__PANEL_ATTR_RW(adaptive_control, 0666),
 	__PANEL_ATTR_RW(siop_enable, 0664),
 	__PANEL_ATTR_RW(temperature, 0664),
 #ifdef CONFIG_EXYNOS_LCD_ENG
@@ -3928,14 +3928,14 @@ struct device_attribute panel_attrs[] = {
 	__PANEL_ATTR_RW(isc, 0664),
 #endif
 #endif
-	__PANEL_ATTR_RW(mcd_mode, 0664),
-	__PANEL_ATTR_RW(partial_disp, 0664),
+	__PANEL_ATTR_RW(mcd_mode, 0666),
+	__PANEL_ATTR_RW(partial_disp, 0666),
 	__PANEL_ATTR_RW(mcd_resistance, 0664),
 #ifdef CONFIG_PANEL_AID_DIMMING_DEBUG
 	__PANEL_ATTR_RW(aid_log, 0660),
 #endif
 #if defined(CONFIG_EXYNOS_DECON_MDNIE_LITE)
-	__PANEL_ATTR_RW(lux, 0644),
+	__PANEL_ATTR_RW(lux, 0666),
 #endif
 #if defined(CONFIG_EXYNOS_DECON_LCD_COPR)
 	__PANEL_ATTR_RW(copr, 0600),
