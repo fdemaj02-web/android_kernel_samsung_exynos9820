@@ -4304,6 +4304,7 @@ struct device_attribute panel_attrs[] = {
 	__PANEL_ATTR_RW(manual_offset_vt, 0664),
 	__PANEL_ATTR_RO(manual_offset_tpvt_status, 0444),
 	__PANEL_ATTR_RO(manual_offset_aor_status, 0444),
+    __PANEL_ATTR_RW(manual_offset_aor, 0664),
 	__PANEL_ATTR_RW(manual_offset_color_array, 0664),
 	__PANEL_ATTR_RW(manual_offset_irc, 0664),
 	__PANEL_ATTR_RO(mtp_diag, 0444),
